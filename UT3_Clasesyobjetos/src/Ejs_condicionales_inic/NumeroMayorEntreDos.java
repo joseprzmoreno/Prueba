@@ -20,7 +20,7 @@ public class NumeroMayorEntreDos {
 		else if (numeroB > numeroA)
 			System.out.println(numeroB + " es el mayor número de los dos");
 		else
-			System.out.println("Los número son iguales. En ambos casos has introducido " + numeroA);
+			System.out.println("Los números son iguales. En ambos casos has introducido " + numeroA);
 	
 	//otra forma: int maximo; maximo = numero1 > numero2 ? numero1 : numero2;
 	

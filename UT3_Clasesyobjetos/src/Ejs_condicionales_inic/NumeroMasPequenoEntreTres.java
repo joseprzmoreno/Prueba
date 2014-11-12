@@ -32,9 +32,16 @@ public class NumeroMasPequenoEntreTres {
 		
 		System.out.println("El número más pequeño de los tres es " + numeroMasPequeno);
 		
-		
+		//En Python: http://www.codeskulptor.org/#user38_PzqIPBwNWcbASNT.py
 			
-		
+		/*solución profesor
+		 * int menor = numero1;
+		 * if (numero2<menor)
+		 *    menor=numero2;
+		 * if (numero3<menor)
+		 *    menor=numero3;
+		 * System.out.println("El número más pequeño es" + menor);
+		 */
 
 	}
 
