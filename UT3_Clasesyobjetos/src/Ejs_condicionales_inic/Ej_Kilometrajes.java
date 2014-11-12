@@ -30,7 +30,7 @@ public class Ej_Kilometrajes {
 		double litrosEnDeposito = TamanoDeposito * porcDepositoLleno / 100;
 		
 		//Calcular cuántos kms podemos recorrer con esos litros
-		double kmsRecorrido = litrosConsumo * litrosEnDeposito;
+		double kmsRecorrido = litrosEnDeposito / litrosConsumo * 100;
 		
 		System.out.printf("Usted puede recorrer aproximadamente %.2f kilómetros\n", kmsRecorrido);
 		
