@@ -31,6 +31,7 @@ public class Ej_Kilometrajes {
 		
 		//Calcular cuántos kms podemos recorrer con esos litros
 		double kmsRecorrido = litrosEnDeposito / litrosConsumo * 100;
+		//gasolina/(consumo/100)
 		
 		System.out.printf("Usted puede recorrer aproximadamente %.2f kilómetros\n", kmsRecorrido);
 		
