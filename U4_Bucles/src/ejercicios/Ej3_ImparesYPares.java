@@ -27,5 +27,21 @@ public class Ej3_ImparesYPares {
 		
 		System.out.println("Fin del programa");
 	}
+	
+	//Nota: solo había que mostrar en pantalla el que se introduce cada vez. Lo he hecho yo más difícil.
+	
+	/*
+	 * Alternativa:
+	 * boolean seguir = true;
+	 * do {
+	 *    numero = teclado.nextInt();
+	 *    seguir = !(numero % 2 == 0); //seguir cuando no sea par
+	 *    if (seguir)
+	 *       System.out.println("Número introducido: " + numero);
+	 *    else
+	 *    	 System.out.println("Has insertado un número par");
+	 *   
+	 *    } while(seguir);
+	 */
 
 }
