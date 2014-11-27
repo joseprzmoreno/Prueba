@@ -1,8 +1,6 @@
-package Ejercicios;
+package ejercicios;
 
-import graphics.Color;
-import graphics.Ellipse;
-import graphics.Rectangle;
+import graphics.*;
 
 public class Semaforo2 {
 
@@ -10,7 +8,7 @@ public class Semaforo2 {
 	 * hasta que cierre la aplicación.	
 	
 	*/
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 
 		while(true) {
@@ -36,7 +34,7 @@ public class Semaforo2 {
 			poste.setColor(Color.BLUE);
 			poste.fill();
 			
-			Thread.sleep(500);
+			Thread.sleep(2000);
 			
 			rojo.setColor(Color.BLACK);
 			rojo.fill();
@@ -45,7 +43,7 @@ public class Semaforo2 {
 			verde.setColor(Color.BLACK);
 			verde.fill();
 			
-			Thread.sleep(500);
+			Thread.sleep(1000);
 			
 			rojo.setColor(Color.BLACK);
 			rojo.fill();
@@ -54,17 +52,8 @@ public class Semaforo2 {
 			verde.setColor(Color.GREEN);
 			verde.fill();
 			
-			Thread.sleep(500);
-			
-			rojo.setColor(Color.BLACK);
-			rojo.fill();
-			amarillo.setColor(Color.YELLOW);
-			amarillo.fill();
-			verde.setColor(Color.BLACK);
-			verde.fill();
-			
-			Thread.sleep(500);
-
+			Thread.sleep(2000);
+		}
 	}
 
 }
