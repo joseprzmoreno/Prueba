@@ -2,10 +2,9 @@ package ejercicios;
 
 import graphics.*;
 
-public class Diana {
+public class Diana2 {
 
 	public static void main(String[] args) {
-
 		/*
 		 * Diana: Escribir un programa que dibuje 10 círculos concéntricos en la
 		 * pantalla. Puedes utilizar Math.Random() para obtener valores de color
@@ -13,7 +12,6 @@ public class Diana {
 		 */
 
 		int diametroCE /* diametro circulo externo */= 400;
-		Color colorCirc = Color.RED; 
 
 		// para que no se repitan dos colores seguidos, se necesitan dos
 		// colores, hay que comparar un color con el último que ha salido
@@ -33,35 +31,50 @@ public class Diana {
 			switch (colorAleatorio) {
 
 			case 1:
-				colorCirc = Color.RED;
+				circulo.setColor(Color.RED);
 				break;
 			case 2:
-				colorCirc = Color.YELLOW;
+				circulo.setColor(Color.YELLOW);
 				break;
 			case 3:
-				colorCirc = Color.GREEN;
+				circulo.setColor(Color.GREEN);
 				break;
 			case 4:
-				colorCirc = Color.BLACK;
+				circulo.setColor(Color.BLACK);;
 				break;
 			case 5:
-				colorCirc = Color.CYAN;
+				circulo.setColor(Color.CYAN);;
 				break;
 			case 6:
-				colorCirc = Color.BLUE;
+				circulo.setColor(Color.BLUE);
 				break;
 			case 7:
-				colorCirc = Color.PINK;
+				circulo.setColor(Color.PINK);;
 				break;
 			case 8:
-				colorCirc = Color.ORANGE;
+				circulo.setColor(Color.ORANGE);
 				break;
 
 			}
 
-			circulo.setColor(colorCirc);
 			circulo.fill();
 		}
+
+		/*
+		 * El hace: setColor (new Color((int)(Math.random() * ((max - min) + 1) - min, ... ...
+		 * o: Color colorAleatorio = new Color((int)(Math.random() * ((max-min) + 1)) + min, se repite 2 veces;
+		 *     rec.setColor(colorAleatorio);
+		 *     
+		 *     Otra posibilidad es crear un vector/array:
+		 *     Color[] colorAleatorio;
+		 *     colorAleatorio=new Color[5];
+		 *     
+		 *     colorAleatorio[0]=new Color(0,0,0);
+		 *     colorAleatorio[1]=new Color(200,50,0);
+		 *     ...
+		 *     
+		 *     rec.setColor(colorAleatorio[(int)(Math.random()*5)]);
+		 */
 
 	}
 

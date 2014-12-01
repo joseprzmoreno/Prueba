@@ -24,6 +24,7 @@ public class Pelota {
 			case 2:  velocidadHor = velocidadHor * -1;
 		}
 		
+		//en vertical
 		int velocidadVer = (int)(Math.random()*5+1);
 		int PosVNeg = (int)(Math.random()*2+1);
 		
@@ -37,7 +38,7 @@ public class Pelota {
 		
 		while(true)
 		{
-			//comprobar si rebota
+			//comprobar si rebota y aumentarle un poco la velocidad
 			if (pelota.getX()<10 || pelota.getX()>(400-60))
 			{
 				velocidadHor = velocidadHor * -1;
