@@ -20,7 +20,7 @@ public class Fibonacci {
 
 			int numeroX = 1;
 			int numeroY = 1;
-			int numeroBusc = 1;
+			int numeroBusc = 1;  //numero buscado (se utiliza en la segunda parte del programa)
 			boolean estaEnLista = false;
 
 			System.out.print("1 1 ");

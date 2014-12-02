@@ -35,7 +35,7 @@ public class DatosEmpleado {
 		}
 	}
 	System.out.println("-------------------------");
-	System.out.println("El sueldo medio de los empleados es " + (sueldoAcumulado / numEmpleados) + " euros");
+	System.out.printf("El sueldo medio de los empleados es %.2f euros", sueldoAcumulado / numEmpleados);
 
 	}
 
