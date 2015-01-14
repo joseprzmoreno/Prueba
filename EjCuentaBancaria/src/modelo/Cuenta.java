@@ -3,6 +3,8 @@ package modelo;
 public class Cuenta {
 
 	private long numero;
+	private String titular;
+	private double saldo;
 
 	public long getNumero() {
 		return numero;
@@ -28,9 +30,14 @@ public class Cuenta {
 		this.saldo = saldo;
 	}
 
-	private String titular;
-	private double saldo;
-
+	//constructor si no damos saldo
+	public Cuenta(long numero, String titular) {
+		this.numero = numero;
+		this.titular = titular;
+		this.saldo = 0.0;
+	}
+	
+	//constructor si le damos saldo
 	public Cuenta(long numero, String titular, double saldoInicial) {
 		this.numero = numero;
 		this.titular = titular;
@@ -59,6 +66,7 @@ public class Cuenta {
 	}
 
 	public void transferencia(Cuenta b, double cantidad) {
+		//aqui se podria invocar el método sacar e ingresar
 		if (cantidad > saldo) {
 			System.out.println("No hay saldo suficiente en la cuenta");
 		} else {

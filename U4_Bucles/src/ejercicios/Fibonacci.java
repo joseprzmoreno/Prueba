@@ -33,6 +33,8 @@ public class Fibonacci {
 
 			System.out.println("");
 
+			
+			//ver si un número está en la lista
 			while (numeroBusc != 0) {
 				System.out
 						.println("Introduce un número para ver si está en la lista. Para acabar introduce 0");

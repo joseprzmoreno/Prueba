@@ -13,7 +13,7 @@ public class Pelota {
 		pelota.setColor(Color.RED);
 		pelota.fill();
 
-		//movimiento de la pelota
+		//movimiento inicial de la pelota
 		
 		//en horizontal
 		int velocidadHor = (int)(Math.random()*5+1);
@@ -42,12 +42,12 @@ public class Pelota {
 			if (pelota.getX()<10 || pelota.getX()>(400-60))
 			{
 				velocidadHor = velocidadHor * -1;
-				tiempoEspera = tiempoEspera * 0.95;
+				tiempoEspera = tiempoEspera * 0.80;
 			}
 			
 			if (pelota.getY()<10 || pelota.getY()>(300-60)) {
 				velocidadVer = velocidadVer * -1;
-				tiempoEspera = tiempoEspera * 0.95;
+				tiempoEspera = tiempoEspera * 0.80;
 			}
 			
 			
