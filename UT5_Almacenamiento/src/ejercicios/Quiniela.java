@@ -35,7 +35,7 @@ public class Quiniela {
 			System.out.print(numeros[i] + " ");
 		}
 		
-
+      //python: http://www.codeskulptor.org/#user39_Rj1H6gGesi_0.py
 	}
 
 }

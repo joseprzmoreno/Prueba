@@ -2,25 +2,22 @@ package controlador;
 
 import modelo.BoletoPrimitiva;
 
+import java.util.Scanner;
+
 public class TestBoletoPrimitiva {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		BoletoPrimitiva miBoleto = new BoletoPrimitiva(6);
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.print("Generar boleto: número de apuestas? ");
+		int numApuestas = teclado.nextInt();
+		System.out.println("");
+		System.out.print("AUTOMATICO/MANUAL? ");
+		String modo = teclado.next();
+		BoletoPrimitiva miBoleto = new BoletoPrimitiva(numApuestas, modo);
 		miBoleto.imprimir();
-		miBoleto.getAciertos();
-		
-		BoletoPrimitiva miBoleto12 = new BoletoPrimitiva(12);
-		miBoleto12.imprimir();
-		miBoleto12.getAciertos();
-		
-		
-		int[] miCombi = {1, 2, 5, 26, 29, 31};
-		BoletoPrimitiva miBoletoManual6 = new BoletoPrimitiva(miCombi);
-		miBoletoManual6.imprimir();
-		miBoletoManual6.getAciertos();
-		
+		miBoleto.getAciertos2();
+
 	}
 
 }
